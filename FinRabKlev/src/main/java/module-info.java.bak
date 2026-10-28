@@ -1,0 +1,8 @@
+module ipap.finrabklev {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    
+
+    opens ipap.finrabklev to javafx.fxml;
+}

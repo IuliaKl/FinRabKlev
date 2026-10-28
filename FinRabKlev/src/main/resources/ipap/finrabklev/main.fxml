@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="726.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipap.finrabklev.TrajectoryController">
+   <children>
+      <Canvas fx:id="canvasField" height="570.0" layoutX="29.0" layoutY="25.0" width="523.0" />
+      <TableView fx:id="tablePoits" layoutX="646.0" layoutY="125.0" prefHeight="580.0" prefWidth="185.0">
+        <columns>
+          <TableColumn fx:id="tablePoint" prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="logArea" layoutX="29.0" layoutY="619.0" prefHeight="85.0" prefWidth="523.0" />
+      <Button fx:id="btnStart" layoutX="569.0" layoutY="25.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="229.0" text="Старт программы" textFill="#1f201f" />
+      <ListView fx:id="listOfCommands" layoutX="556.0" layoutY="150.0" prefHeight="558.0" prefWidth="86.0" />
+   </children>
+</AnchorPane>
